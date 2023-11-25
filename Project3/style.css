@@ -1,0 +1,38 @@
+/* Resetting default styles */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; /* Fixing typo: Should be 'box-sizing' */
+    font-family: sans-serif;
+}
+
+/* Body styles */
+body {
+    background: rgb(186, 33, 33);
+}
+
+/* Card styles */
+.card {
+    width: 700px;
+    background: grey;
+    padding: 20px;
+    margin: 20px;
+    font-family: sans-serif;
+    line-height: 30px;
+}
+
+/* Scroll Bar styles */
+/* We can style the properties of  scrollbar using this kit */
+
+/* Styling the main scrollbar container */
+::-webkit-scrollbar {
+    background-color: transparent; /* Making the scrollbar background transparent */
+    width: 10px;
+    border: 2px dashed white; /* Adding a dashed border around the scrollbar */
+}
+
+/* Styling the scrollbar thumb (the draggable handle) */
+::-webkit-scrollbar-thumb {
+    background : linear-gradient(#4158D0 , #80D0C7); /* Applying a gradient background */
+    border-radius: 100px; /* Adding a rounded border to the scrollbar thumb */
+}
