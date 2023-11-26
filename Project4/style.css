@@ -1,0 +1,67 @@
+/* Resetting default margin and padding for all elements */
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* Styling the body with a flex container for centering */
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #555;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Styling the container div */
+.container {
+    position: relative;
+    width: 800px;
+    height: 500px;
+    background-color: #222;
+}
+
+/* Styling the clip div with common properties */
+.clip {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: 0.5s; /* Adding transition for smooth effect */
+}
+
+/* Styling for the first clip with a polygon clip path */
+.clip1 {
+    background-image: url("https://images.unsplash.com/photo-1604537466158-719b1972feb8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80"); /* Image URL */
+    background-size: cover;
+    background-position: center;
+    clip-path: polygon(0 0, 46% 0, 39% 100%, 0 100%); /* Polygon clip path */
+}
+
+/* Styling for the second clip */
+.clip2 {
+    background-image: url("https://images.unsplash.com/photo-1502228213426-d4e9f2add0e5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+    background-size: cover;
+    background-position: center;
+    clip-path: polygon(19% 0, 87% 0, 64% 100%, 33% 100%);
+}
+
+/* Styling for the third clip */
+.clip3 {
+    background-image: url("https://images.unsplash.com/photo-1519757043093-285fcb07a4e4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80");
+    background-size: cover;
+    background-position: center;
+    clip-path: polygon(82% 0, 100% 0, 100% 100%, 63% 100%);
+}
+
+/* Hover effect for the container and clip */
+.container:hover .clip {
+    clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
+}
+
+.container .clip:hover {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
